@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Log",
+    "scopeName": "text.log",
+    "patterns": [
+        {
+            "name": "string.other.date.log",
+            "match": "(Sun|Mon|Tue|Wed|Thu|Fri|Sat)\\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+\\d{1,2}\\s+\\d{2}:\\d{2}:\\d{2}\\s+\\d{4}"
+        },
+        {
+            "name": "invalid.illegal.error.log",
+            "match": "ERROR:"
+        },
+        {
+            "name": "keyword.other.warning.log",
+            "match": "WARNING:"
+        },
+        {
+            "name": "invalid.deprecated.critical-warning.log",
+            "match": "CRITICAL_WARNING:"
+        },
+        {
+            "name": "entity.name.function.info.log",
+            "match": "INFO:"
+        },
+        {
+            "name": "storage.type.message.log",
+            "match": "\\[([^\\]]+)\\]"
+        }
+    ]
+} 
